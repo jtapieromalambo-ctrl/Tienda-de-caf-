@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Miniver&family=Righteous&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background: linear-gradient(to bottom, #faf4f5, #ccc);
+}
+html{
+    scroll-behavior: smooth;
+}
+.container-header{
+    background:#3b141c;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+.container-header header{
+   
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+.container-header header .logo a{
+   font-family: sans-serif;
+    font-size: 20px;
+    color: #fff;
+    text-decoration: none;
+}
+.container-header header ul{
+    display: flex;
+    list-style: none;
+}
+.container-header header nav ul li a{
+    font-family: sans-serif;
+    text-align: center;
+    color: #fff;
+    margin: 0 15px;
+    padding: 8px;
+    transition: .5s;
+    text-decoration: none;
+    border-radius: 15px;
+}
+.container-header header nav ul li a:hover{
+    background: #f3961c;
+    color: #3b141c;
+}
+/*CONTACTO*/
+.container-section{
+    margin-top: 6%;
+}
+.container-section h1{
+    font-family: sans-serif;
+    text-align: center;
+    color: #3b141c;
+}
+.linea {
+    background: #f3961c;
+   border: none;
+   width: 100px;
+   height: 5px;
+   display: flex;
+   margin: 0 46.7%;
+   border-radius: 50px;
+
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 200px;
+    flex-wrap: wrap;
+    margin: 150px 200px;
+}
+
+.container .container-form .boton input{
+    width: 100px;
+    border-radius: 20px;
+    background: #3b141c;
+    color: #fff;
+    transition: .3s;
+    cursor: pointer;
+}
+.container .container-form .boton input:hover{
+    transform: scale(1.1);
+}
+.container .container-form input{
+    outline: none;
+   border:none;
+   margin-top: 15px;
+   border-radius: 8px;
+   padding: 12px;
+   width: 450px;
+}
+.container .container-form input:focus{
+border: solid #f3961c;
+}
+.container .container-form textarea{
+    outline: none;
+    border: 2px solid #ccc;
+    margin-top: 15px;
+    padding: 12px;
+    width: 450px;
+    border-radius: 8px;
+    resize: none;
+} 
+.container .container-form textarea:focus{
+border:solid #f3961c;
+}
+
+@media (max-width: 768px){
+
+    .container-section{
+        margin-top: 12%;
+    }
+  .container-form{
+    order: 1;
+    flex: 1 1 45%;
+    }
+ .container-info{
+    order: 2;
+      flex: 1 1 45%;
+ }
+ .linea{
+    margin: 0 auto;
+ }
+}

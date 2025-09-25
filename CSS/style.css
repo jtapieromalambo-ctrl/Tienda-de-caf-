@@ -1,0 +1,120 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Miniver&family=Righteous&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background: #3b141c;
+}
+html{
+    scroll-behavior: smooth;
+}
+.container-header{
+    background: #3b141c;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+.container-header header{
+   
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+.container-header header .logo a{
+   font-family: sans-serif;
+    font-size: 20px;
+    color: #fff;
+    text-decoration: none;
+}
+.container-header header ul{
+    display: flex;
+    list-style: none;
+}
+.container-header header nav ul li a{
+    font-family: sans-serif;
+    text-align: center;
+    color: #fff;
+    margin: 0 15px;
+    padding: 8px;
+    transition: .5s;
+    text-decoration: none;
+    border-radius: 15px;
+}
+.container-header header nav ul li a:hover{
+    background: #f3961c;
+    color: #3b141c;
+}
+/*Inicio*/
+.container-section{
+    margin-top: 8%;
+    display: flex;
+    gap: 250px;
+    max-width: 800px;
+
+}
+.container-section .container h1{
+    font-size: 40px;
+    font-family: 'miniver',sans-serif ;
+    color: #f3961c;
+}
+.container-section .container h2{
+    font-size: 40px;
+    font-family: sans-serif;
+    color: #fff;
+}
+.container-section .container p{
+    font-size: 16px;
+    font-family: sans-serif;
+    color: #fff;
+}
+.container-section .container-img{
+    margin-top: 30%;
+    display: flex;
+    align-items: center;
+    width: 90px;
+    height: 90px;
+}
+.container-section .container{
+    width: 450px;
+    height: 150px;
+    margin: 0;
+}
+.container-section .container .btn{
+    font-family: sans-serif;
+    background: #f3961c;
+    border: none;
+    border-radius: 15px;
+    padding: 8px;
+    margin:10px;
+    margin-top: 15px;
+    transition: .2s;
+    cursor: pointer;
+    color: #3b141c;
+    
+}
+.container-section .container .btn:hover{
+    transform: scale(1.1);
+    color: #fff;
+}
+@media (max-width: 768px){
+    .container-section{
+        display: grid;
+    }
+    .container-section .container{
+        margin: 0 200px;
+        text-align: center;
+    }
+    .container-section .container-img img{
+        width: 550px;
+        height: 550px;
+    }
+    .container-section .container-img{
+        margin: 250px 125px;
+    }
+}
